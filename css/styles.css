@@ -77,10 +77,10 @@
 
 .imgsForTech {
   max-width: 100%;
-  float: left;
   width:  650px;
   height: 400px;
-  background-size: cover;
+  background-size: contain;
+  padding: 5px;
 }
 
 body {
@@ -594,6 +594,19 @@ progress {
 }
 .blockquote > :last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .team-list img,
+  .team-list .content {
+    width: 100%;
+    float: none !important;
+  }
+  .team-list img .follow,
+  .team-list .content .follow {
+    position: relative;
+    bottom: 0;
+  }
 }
 
 .blockquote-footer {
